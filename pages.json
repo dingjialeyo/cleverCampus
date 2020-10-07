@@ -1,0 +1,104 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页,
+
+		{
+			"path": "pages/login/login",
+			"style": {
+				// 禁用原生导航
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				// 禁用原生导航
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}
+
+		, {
+			"path": "pages/about/about",
+			"style": {}
+		}, {
+			"path": "pages/message/message",
+			"style": {}
+		}, {
+			"path": "pages/dynamic/dynamic",
+			"style": {}
+		}, {
+			"path": "pages/find/find",
+			"style": {}
+		}
+        ,{
+            "path" : "pages/findpassword/findpassword",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/secondhandMarket/secondhandMarket",
+            "style" : {
+				// 禁用原生导航
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+        }
+    ],
+	// 全局外观
+	"globalStyle": {
+		// 导航栏标题  仅支持blackOrwhite
+		"navigationBarTextStyle": "white",
+		// 导航栏背景颜色
+		"navigationBarBackgroundColor": "#0faeff",
+		// 窗口背景色
+		"backgroundColor": "#fbf9fe",
+		// 下拉刷新
+		"enablePullDownRefresh": true
+	},
+	// 配置底部导航栏
+	"tabBar": {
+		// 未选中的图标对应的文字颜色
+		"color": "#ccc",
+		// 选中图标的文字颜色
+		"selectedColor": "#323232",
+		"list": [{
+				"text": "动态",
+				// 要跳转的页面
+				"pagePath": "pages/dynamic/dynamic",
+				"iconPath": "static/icon/dynamic.png",
+				"selectedIconPath": "static/icon/dynamic-active.png"
+			},
+			{
+				"text": "发现",
+				// 要跳转的页面
+				"pagePath": "pages/find/find",
+				"iconPath": "static/icon/find.png",
+				"selectedIconPath": "static/icon/find-active.png"
+			},
+			{
+				// 要跳转的页面
+				"pagePath": "pages/home/home",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home-active.png"
+
+			},
+			{
+				"text": "消息",
+				// 要跳转的页面
+				"pagePath": "pages/message/message",
+				"iconPath": "static/icon/message.png",
+				"selectedIconPath": "static/icon/message-active.png"
+			},
+			{
+				"text": "我的",
+				// 要跳转的页面
+				"pagePath": "pages/about/about",
+				"iconPath": "static/icon/about.png",
+				"selectedIconPath": "static/icon/about-active.png"
+			}
+		]
+	}
+}
